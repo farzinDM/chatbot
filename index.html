@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="app.js"></script>
+    </head>
+    <body>
+        <div class="calc">
+            <div class="calc-screen">
+                <p class="calculation">4,900 + 15,910</p>
+                <p class="answer">20,810</p>
+            </div>
+
+            <div class="calc-buttons">
+                <button class="button blue c" data-text="c">c</button>
+                <button class="button blue" data-text="del">+/-</button>
+                <button class="button blue" data-text="%">%</button>
+                <button class="button blue" data-text="/">÷</button>
+                <button class="button gray" data-text="7">7</button>
+                <button class="button gray" data-text="8">8</button>
+                <button class="button gray" data-text="9">9</button>
+                <button class="button red" data-text="*">x</button>
+                <button class="button gray" data-text="4">4</button>
+                <button class="button gray" data-text="5">5</button>
+                <button class="button gray" data-text="6">6</button>
+                <button class="button red" data-text="-">-</button>
+                <button class="button gray" data-text="1">1</button>
+                <button class="button gray" data-text="2">2</button>
+                <button class="button gray" data-text="3">3</button>
+                <button class="button red" data-text="+">+</button>
+                <button class="button gray zero" data-text="0">0</button>
+                <button class="button gray" data-text=".">.</button>
+                <button class="button red equal" data-text="=">=</button>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            (function (d, t) {
+                var v = d.createElement(t),
+                    s = d.getElementsByTagName(t)[0];
+                v.onload = function () {
+                    window.voiceflow.chat.load({
+                        verify: { projectID: "67775f0d11ca569c18c067bf" },
+                        url: "https://general-runtime.voiceflow.com",
+                        versionID: "production",
+                    });
+                };
+                v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+                v.type = "text/javascript";
+                s.parentNode.insertBefore(v, s);
+            })(document, "script");
+        </script>
+    </body>
+</html>
